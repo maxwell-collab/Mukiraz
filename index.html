@@ -5,28 +5,61 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Elite Shoe Store</title>
 
-<!-- External CSS -->
-<link rel="stylesheet" href="style.css">
-
-<!-- Internal CSS -->
+<!-- COMBINED CSS (Internal + External together) -->
 <style>
+
 body{
     background-color:black;
     color:white;
-    font-family:Arial;
+    font-family:Arial, sans-serif;
 }
 
+/* containers */
 .container{
     border:1px solid white;
     margin:20px;
     padding:20px;
 }
 
+/* shoe boxes */
+.shoe-box{
+    display:inline-block;
+    width:160px;
+    margin:10px;
+    padding:10px;
+    background-color:#111;
+    text-align:center;
+}
+
+/* headings (previous external CSS) */
+h1{
+    color:cyan;
+}
+
+h2{
+    color:orange;
+}
+
+/* small images */
+img{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+    border-radius:6px;
+}
+
+/* table styling */
+table, th, td{
+    border:1px solid white;
+    border-collapse:collapse;
+    padding:8px;
+}
+
 iframe{
     margin:10px;
 }
-</style>
 
+</style>
 </head>
 
 <body>
@@ -36,64 +69,60 @@ iframe{
 <p>Your Comfort. Your Style.</p>
 </header>
 
-<!-- CONTENT CONTAINER -->
+<!-- CONTENT -->
 <section class="container">
 
 <p><b>Line 1: Welcome to Elite Shoe Store — quality footwear for everyone.</b></p>
-<p><i>Line 2: Stylish and comfortable shoes.</i></p>
+<p><i>Line 2: Stylish and comfortable shoes for daily wear.</i></p>
 <p><u>Line 3: Carefully selected for durability.</u></p>
-<p>Line 4: Grand opening 21<sup>st</sup> July 2026.</p>
+<p>Line 4: Grand opening on 21<sup>st</sup> July 2026.</p>
 <p>Line 5: H<sub>2</sub>O-resistant sneakers.</p>
 
-<!-- INLINE CSS -->
-<p style="color:yellow;">Line 6: Inline CSS example.</p>
+<!-- Inline CSS Example -->
+<p style="color:yellow;">
+Line 6: Limited Offer — Inline CSS applied here!
+</p>
 
 </section>
 
-<!-- IMAGE CONTAINERS (5 REQUIRED) -->
+<!-- SHOE IMAGES -->
 <section class="container">
 
-<h2>Shoe Images</h2>
-<!-- IMAGE CONTAINERS (5 REQUIRED) -->
-<section class="container">
+<h2>Shoe Gallery</h2>
 
-<h2>Shoe Images</h2>
-
-<div class="container">
+<div class="shoe-box">
 <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
-<p>Nike Running Shoes</p>
+<p>Nike Running</p>
 </div>
 
-<div class="container">
+<div class="shoe-box">
 <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519">
 <p>Adidas Sneakers</p>
 </div>
 
-<div class="container">
+<div class="shoe-box">
 <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77">
-<p>Puma Sports Shoes</p>
+<p>Puma Sports</p>
 </div>
 
-<div class="container">
+<div class="shoe-box">
 <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a">
-<p>Casual Sneakers</p>
+<p>Casual Shoes</p>
 </div>
 
-<div class="container">
+<div class="shoe-box">
 <img src="https://images.unsplash.com/photo-1584735175315-9d5df23be620">
-<p>Formal Leather Shoes</p>
+<p>Formal Leather</p>
 </div>
 
 </section>
 
-</section>
-
-<!-- TABLE CONTAINER (YOUR TABLE KEPT) -->
+<!-- TABLE -->
 <section class="container">
 
 <h2>Shoe Inventory Table</h2>
 
-<table border="1">
+<table>
 <tr>
 <th>ID</th>
 <th>Name</th>
@@ -125,16 +154,16 @@ iframe{
 
 </section>
 
-<!-- VIDEOS CONTAINER (YOUR VIDEOS KEPT) -->
+<!-- VIDEOS -->
 <section class="container">
 
-<h2>Videos</h2>
+<h2>Shoe Videos</h2>
 
-<iframe width="560" height="315"
+<iframe width="400" height="225"
 src="https://www.youtube.com/embed/w51KTmyua8k"
 allowfullscreen></iframe>
 
-<iframe width="560" height="315"
+<iframe width="400" height="225"
 src="https://www.youtube.com/embed/l4qXAeMAWUI"
 allowfullscreen></iframe>
 
@@ -142,4 +171,3 @@ allowfullscreen></iframe>
 
 </body>
 </html>
-
