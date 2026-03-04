@@ -5,33 +5,36 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Elite Shoe Store</title>
 
-<!-- COMBINED CSS (Internal + External together) -->
+<!-- Internal CSS -->
 <style>
 
+/* Background color (NOT white) */
 body{
-    background-color:black;
-    color:white;
-    font-family:Arial, sans-serif;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center; /* Centered content */
 }
 
-/* containers */
-.container{
-    border:1px solid white;
-    margin:20px;
-    padding:20px;
-}
-
-/* shoe boxes */
+/* Image containers */
 .shoe-box{
     display:inline-block;
-    width:160px;
+    width:180px;
     margin:10px;
     padding:10px;
-    background-color:#111;
-    text-align:center;
+    background-color:#222;
+    border-radius:8px;
 }
 
-/* headings (previous external CSS) */
+/* Images */
+img{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+    border-radius:6px;
+}
+
+/* Headings */
 h1{
     color:cyan;
 }
@@ -40,56 +43,25 @@ h2{
     color:orange;
 }
 
-/* small images */
-img{
-    width:120px;
-    height:120px;
-    object-fit:cover;
-    border-radius:6px;
-}
-
-/* table styling */
-table, th, td{
-    border:1px solid white;
-    border-collapse:collapse;
-    padding:8px;
-}
-
-iframe{
-    margin:10px;
-}
-
 </style>
 </head>
 
 <body>
 
-<header class="container">
 <h1>Elite Shoe Store</h1>
 <p>Your Comfort. Your Style.</p>
-</header>
 
-<!-- CONTENT -->
-<section class="container">
+<p><b>Welcome to Elite Shoe Store</b></p>
+<p><i>Best quality footwear available</i></p>
 
-<p><b>Line 1: Welcome to Elite Shoe Store — quality footwear for everyone.</b></p>
-<p><i>Line 2: Stylish and comfortable shoes for daily wear.</i></p>
-<p><u>Line 3: Carefully selected for durability.</u></p>
-<p>Line 4: Grand opening on 21<sup>st</sup> July 2026.</p>
-<p>Line 5: H<sub>2</sub>O-resistant sneakers.</p>
-
-<!-- Inline CSS Example -->
-<p style="color:yellow;">
-Line 6: Limited Offer — Inline CSS applied here!
+<!-- Inline CSS -->
+<p style="color:yellow; font-size:18px;">
+Limited Offer: 20% OFF This Week!
 </p>
-
-</section>
-
-<!-- SHOE IMAGES -->
-<section class="container">
 
 <h2>Shoe Gallery</h2>
 
+<!-- 5 IMAGE CONTAINERS -->
 <div class="shoe-box">
 <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
 <p>Nike Running</p>
@@ -114,60 +86,6 @@ Line 6: Limited Offer — Inline CSS applied here!
 <img src="https://images.unsplash.com/photo-1584735175315-9d5df23be620">
 <p>Formal Leather</p>
 </div>
-
-</section>
-
-<!-- TABLE -->
-<section class="container">
-
-<h2>Shoe Inventory Table</h2>
-
-<table>
-<tr>
-<th>ID</th>
-<th>Name</th>
-<th>Brand</th>
-<th>Size</th>
-<th>Color</th>
-<th>Price</th>
-</tr>
-
-<tr>
-<td>1</td>
-<td>Air Max</td>
-<td>Nike</td>
-<td>42</td>
-<td>Black</td>
-<td>5999</td>
-</tr>
-
-<tr>
-<td>2</td>
-<td>Ultra Boost</td>
-<td>Adidas</td>
-<td>41</td>
-<td>White</td>
-<td>6500</td>
-</tr>
-
-</table>
-
-</section>
-
-<!-- VIDEOS -->
-<section class="container">
-
-<h2>Shoe Videos</h2>
-
-<iframe width="400" height="225"
-src="https://www.youtube.com/embed/w51KTmyua8k"
-allowfullscreen></iframe>
-
-<iframe width="400" height="225"
-src="https://www.youtube.com/embed/l4qXAeMAWUI"
-allowfullscreen></iframe>
-
-</section>
 
 </body>
 </html>
