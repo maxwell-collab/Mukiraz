@@ -1,0 +1,17 @@
+/* External Paragraph */
+.external-paragraph {
+  color: purple;
+  text-decoration: underline;
+}
+
+/* External Highlight */
+.external-highlight {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* External h3 */
+.external-beauty {
+  color: brown;
+  text-decoration: underline;
+}
