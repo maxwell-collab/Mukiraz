@@ -10,7 +10,6 @@
 
 <!-- Internal CSS -->
 <style>
-/* Internal CSS */
 h1 {
     color: cyan;
 }
@@ -41,9 +40,9 @@ h2 {
 Limited Offer: 20% OFF This Week!
 </p>
 
-<h2>Shoe Gallery (Images)</h2>
+<h2>Shoe Gallery (Small Images)</h2>
 
-<!-- 5 Images in Containers -->
+<!-- 5 Small Images in Containers -->
 <div class="shoe-box">
     <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="Adidas Sneakers">
     <p>Adidas Sneakers</p>
@@ -69,11 +68,11 @@ Limited Offer: 20% OFF This Week!
     <p>Formal Leather</p>
 </div>
 
-<h2>Shoe Showcase (Videos)</h2>
+<h2>Shoe Showcase (Small Videos)</h2>
 
-<!-- 2 Videos in Containers -->
+<!-- 2 Small Videos in Containers -->
 <div class="video-box">
-    <video width="200" height="150" controls>
+    <video width="150" height="100" controls>
         <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
     </video>
@@ -81,7 +80,7 @@ Limited Offer: 20% OFF This Week!
 </div>
 
 <div class="video-box">
-    <video width="200" height="150" controls>
+    <video width="150" height="100" controls>
         <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
     </video>
@@ -100,38 +99,37 @@ body {
     margin: 0;
 }
 
-/* Image container styling */
+/* Small Image container styling */
 .shoe-box {
     display: inline-block;
-    width: 150px;
-    margin: 15px;
-    padding: 10px;
+    width: 100px;  /* small container */
+    margin: 10px;
+    padding: 8px;
     background-color: #222;
     border-radius: 8px;
 }
 
-/* Images smaller inside containers */
+/* Tiny images */
 .shoe-box img {
-    width: 80px;
-    height: 80px;
+    width: 40px;   /* tiny image */
+    height: 40px;  /* tiny image */
     object-fit: cover;
     border-radius: 6px;
 }
 
-/* Video container styling */
+/* Small Video container styling */
 .video-box {
     display: inline-block;
-    width: 220px;
-    margin: 15px;
-    padding: 10px;
+    width: 160px;  
+    margin: 10px;
+    padding: 8px;
     background-color: #222;
     border-radius: 8px;
 }
 
-/* Make videos fit container */
+/* Small videos */
 .video-box video {
-    width: 200px;
-    height: 150px;
+    width: 150px;
+    height: 100px;
     border-radius: 6px;
 }
-
