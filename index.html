@@ -5,11 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Elite Shoe Store</title>
 
-<!-- External CSS -->
-<link rel="stylesheet" href="style.css">
-
-<!-- Internal CSS -->
 <style>
+
+/* Background */
+body {
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Headings */
 h1 {
     color: cyan;
 }
@@ -19,9 +25,50 @@ h2 {
 }
 
 .container {
-    text-align: center; /* Centered content */
+    text-align: center;
     padding: 20px;
 }
+
+/* Shoe container */
+.shoe-box {
+    display: inline-block;
+    width: 70px;   /* Smaller container */
+    margin: 8px;
+    padding: 6px;
+    background-color: #222;
+    border-radius: 8px;
+    vertical-align: top;
+}
+
+/* ALL images small */
+.shoe-box img {
+    width: 40px;      /* Smaller images */
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+/* Video container */
+.video-box {
+    display: inline-block;
+    width: 140px;
+    margin: 10px;
+    padding: 8px;
+    background-color: #222;
+    border-radius: 8px;
+}
+
+/* Smaller videos */
+.video-box video {
+    width: 130px;
+    height: 80px;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto;
+}
+
 </style>
 
 </head>
@@ -35,116 +82,54 @@ h2 {
 <p><b>Welcome to Elite Shoe Store</b></p>
 <p><i>Best quality footwear available</i></p>
 
-<p style="color: yellow; font-size:18px; font-weight:bold;">
+<p style="color: yellow; font-size:16px; font-weight:bold;">
 Limited Offer: 20% OFF This Week!
 </p>
 
-<h2>Shoe Gallery (Tiny Images)</h2>
+<h2>Shoe Gallery</h2>
 
 <div class="shoe-box">
-    <img class="tiny-shoe" src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="Adidas Sneakers">
-    <p>Adidas Sneakers</p>
+    <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="Adidas Sneakers">
+    <p>Adidas</p>
 </div>
 
 <div class="shoe-box">
-    <img class="tiny-shoe" src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77" alt="Puma Sports">
-    <p>Puma Sports</p>
+    <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77" alt="Puma Sports">
+    <p>Puma</p>
 </div>
 
 <div class="shoe-box">
-    <img class="tiny-shoe" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Nike Running">
-    <p>Nike Running</p>
+    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Nike Running">
+    <p>Nike</p>
 </div>
 
 <div class="shoe-box">
     <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a" alt="Casual Shoes">
-    <p>Casual Shoes</p>
+    <p>Casual</p>
 </div>
 
 <div class="shoe-box">
     <img src="https://images.unsplash.com/photo-1584735175315-9d5df23be620" alt="Formal Leather">
-    <p>Formal Leather</p>
+    <p>Formal</p>
 </div>
 
-<h2>Shoe Showcase (Videos)</h2>
+<h2>Shoe Showcase</h2>
 
 <div class="video-box">
-    <video width="150" height="100" controls>
+    <video controls>
         <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
     </video>
-    <p>Nike Shoes Demo</p>
+    <p>Nike Demo</p>
 </div>
 
 <div class="video-box">
-    <video width="150" height="100" controls>
+    <video controls>
         <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
     </video>
-    <p>Adidas Shoes Demo</p>
+    <p>Adidas Demo</p>
 </div>
 
 </div>
 
 </body>
 </html>
-
-/* Background color not white */
-body {
-    background-color: #111;
-    color: white;
-    font-family: Arial, sans-serif;
-    margin: 0;
-}
-
-/* Image container styling */
-.shoe-box {
-    display: inline-block;
-    width: 80px;  /* container width small */
-    margin: 10px;
-    padding: 8px;
-    background-color: #222;
-    border-radius: 8px;
-    vertical-align: top;
-}
-
-/* Force tiny images to stay small */
-.shoe-box img.tiny-shoe {
-    width: 30px !important;
-    height: 30px !important;
-    max-width: 100%;  /* ensure image fits container */
-    display: block;
-    margin: 0 auto;
-    border-radius: 6px;
-    object-fit: cover;
-}
-
-/* Other images slightly bigger */
-.shoe-box img:not(.tiny-shoe) {
-    width: 50px;
-    height: 50px;
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
-    border-radius: 6px;
-    object-fit: cover;
-}
-
-/* Video container styling */
-.video-box {
-    display: inline-block;
-    width: 160px;  
-    margin: 10px;
-    padding: 8px;
-    background-color: #222;
-    border-radius: 8px;
-}
-
-/* Small videos */
-.video-box video {
-    width: 150px;
-    height: 100px;
-    border-radius: 6px;
-    display: block;
-    margin: 0 auto;
-}
