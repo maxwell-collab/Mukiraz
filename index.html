@@ -35,14 +35,12 @@ h2 {
 <p><b>Welcome to Elite Shoe Store</b></p>
 <p><i>Best quality footwear available</i></p>
 
-<!-- Inline CSS -->
 <p style="color: yellow; font-size:18px; font-weight:bold;">
 Limited Offer: 20% OFF This Week!
 </p>
 
-<h2>Shoe Gallery (Small Images)</h2>
+<h2>Shoe Gallery (Tiny Images)</h2>
 
-<!-- 5 Images in Containers -->
 <div class="shoe-box">
     <img class="tiny-shoe" src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="Adidas Sneakers">
     <p>Adidas Sneakers</p>
@@ -90,6 +88,7 @@ Limited Offer: 20% OFF This Week!
 
 </body>
 </html>
+
 /* Background color not white */
 body {
     background-color: #111;
@@ -101,7 +100,7 @@ body {
 /* Image container styling */
 .shoe-box {
     display: inline-block;
-    width: 100px;  
+    width: 80px;  /* container width small */
     margin: 10px;
     padding: 8px;
     background-color: #222;
@@ -109,24 +108,26 @@ body {
     vertical-align: top;
 }
 
-/* Make Nike, Puma, Adidas extremely small */
+/* Force tiny images to stay small */
 .shoe-box img.tiny-shoe {
-    width: 30px !important;   /* tiny image */
-    height: 30px !important;  /* tiny image */
-    object-fit: cover;
-    border-radius: 6px;
+    width: 30px !important;
+    height: 30px !important;
+    max-width: 100%;  /* ensure image fits container */
     display: block;
     margin: 0 auto;
+    border-radius: 6px;
+    object-fit: cover;
 }
 
 /* Other images slightly bigger */
 .shoe-box img:not(.tiny-shoe) {
     width: 50px;
     height: 50px;
-    object-fit: cover;
-    border-radius: 6px;
+    max-width: 100%;
     display: block;
     margin: 0 auto;
+    border-radius: 6px;
+    object-fit: cover;
 }
 
 /* Video container styling */
