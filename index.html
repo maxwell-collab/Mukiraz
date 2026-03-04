@@ -5,48 +5,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Elite Shoe Store</title>
 
+<!-- External CSS -->
+<link rel="stylesheet" href="style.css">
+
 <!-- Internal CSS -->
 <style>
-
-/* Background color (NOT white) */
-body{
-    background-color: black;
-    color: white;
-    font-family: Arial, sans-serif;
-    text-align: center; /* Centered content */
-}
-
-/* Image containers */
-.shoe-box{
-    display:inline-block;
-    width:180px;
-    margin:10px;
-    padding:10px;
-    background-color:#222;
-    border-radius:8px;
-}
-
-/* Images */
-img{
-    width:120px;
-    height:120px;
-    object-fit:cover;
-    border-radius:6px;
-}
-
-/* Headings */
 h1{
-    color:cyan;
+    color: cyan;
 }
 
 h2{
-    color:orange;
+    color: orange;
 }
 
+.container{
+    text-align: center; /* Centered content */
+}
 </style>
+
 </head>
 
 <body>
+
+<div class="container">
 
 <h1>Elite Shoe Store</h1>
 <p>Your Comfort. Your Style.</p>
@@ -55,37 +36,64 @@ h2{
 <p><i>Best quality footwear available</i></p>
 
 <!-- Inline CSS -->
-<p style="color:yellow; font-size:18px;">
+<p style="color: yellow; font-size:18px;">
 Limited Offer: 20% OFF This Week!
 </p>
 
 <h2>Shoe Gallery</h2>
 
-<!-- 5 IMAGE CONTAINERS -->
+<!-- 5 Image Containers -->
 <div class="shoe-box">
-<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
+<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Nike">
 <p>Nike Running</p>
 </div>
 
 <div class="shoe-box">
-<img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519">
+<img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="Adidas">
 <p>Adidas Sneakers</p>
 </div>
 
 <div class="shoe-box">
-<img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77">
+<img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77" alt="Puma">
 <p>Puma Sports</p>
 </div>
 
 <div class="shoe-box">
-<img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a">
+<img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a" alt="Casual">
 <p>Casual Shoes</p>
 </div>
 
 <div class="shoe-box">
-<img src="https://images.unsplash.com/photo-1584735175315-9d5df23be620">
+<img src="https://images.unsplash.com/photo-1584735175315-9d5df23be620" alt="Formal">
 <p>Formal Leather</p>
+</div>
+
 </div>
 
 </body>
 </html>
+/* Background color (NOT white) */
+body{
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Image containers */
+.shoe-box{
+    display: inline-block;
+    width: 180px;
+    margin: 15px;
+    padding: 10px;
+    background-color: #222;
+    border-radius: 8px;
+}
+
+/* Images */
+img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+}
