@@ -10,21 +10,22 @@
 
 <!-- Internal CSS -->
 <style>
-h1{
+/* Internal CSS */
+h1 {
     color: cyan;
 }
 
-h2{
+h2 {
     color: orange;
 }
 
-.container{
-    text-align: center;   /* Centered content */
+.container {
+    text-align: center; /* Centered content */
+    padding: 20px;
 }
 </style>
 
 </head>
-
 <body>
 
 <div class="container">
@@ -36,52 +37,71 @@ h2{
 <p><i>Best quality footwear available</i></p>
 
 <!-- Inline CSS -->
-<p style="color: yellow; font-size:18px;">
+<p style="color: yellow; font-size:18px; font-weight:bold;">
 Limited Offer: 20% OFF This Week!
 </p>
 
-<h2>Shoe Gallery</h2>
+<h2>Shoe Gallery (Images)</h2>
 
-<!-- 5 Image Containers -->
+<!-- 5 Images in Containers -->
 <div class="shoe-box">
-<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Nike">
-<p>Nike Running</p>
+    <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="Adidas Sneakers">
+    <p>Adidas Sneakers</p>
 </div>
 
 <div class="shoe-box">
-<img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="Adidas">
-<p>Adidas Sneakers</p>
+    <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77" alt="Puma Sports">
+    <p>Puma Sports</p>
 </div>
 
 <div class="shoe-box">
-<img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77" alt="Puma">
-<p>Puma Sports</p>
+    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Nike Running">
+    <p>Nike Running</p>
 </div>
 
 <div class="shoe-box">
-<img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a" alt="Casual">
-<p>Casual Shoes</p>
+    <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a" alt="Casual Shoes">
+    <p>Casual Shoes</p>
 </div>
 
 <div class="shoe-box">
-<img src="https://images.unsplash.com/photo-1584735175315-9d5df23be620" alt="Formal">
-<p>Formal Leather</p>
+    <img src="https://images.unsplash.com/photo-1584735175315-9d5df23be620" alt="Formal Leather">
+    <p>Formal Leather</p>
+</div>
+
+<h2>Shoe Showcase (Videos)</h2>
+
+<!-- 2 Videos in Containers -->
+<div class="video-box">
+    <video width="200" height="150" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <p>Nike Shoes Demo</p>
+</div>
+
+<div class="video-box">
+    <video width="200" height="150" controls>
+        <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <p>Adidas Shoes Demo</p>
 </div>
 
 </div>
 
 </body>
 </html>
-/* Background color (NOT white) */
-body{
+/* Background color not white */
+body {
     background-color: #111;
     color: white;
     font-family: Arial, sans-serif;
     margin: 0;
 }
 
-/* Image containers */
-.shoe-box{
+/* Image container styling */
+.shoe-box {
     display: inline-block;
     width: 150px;
     margin: 15px;
@@ -90,10 +110,28 @@ body{
     border-radius: 8px;
 }
 
-/* Smaller Images */
-img{
-    width: 80px;   /* smaller width */
-    height: 80px;  /* smaller height */
+/* Images smaller inside containers */
+.shoe-box img {
+    width: 80px;
+    height: 80px;
     object-fit: cover;
     border-radius: 6px;
 }
+
+/* Video container styling */
+.video-box {
+    display: inline-block;
+    width: 220px;
+    margin: 15px;
+    padding: 10px;
+    background-color: #222;
+    border-radius: 8px;
+}
+
+/* Make videos fit container */
+.video-box video {
+    width: 200px;
+    height: 150px;
+    border-radius: 6px;
+}
+
