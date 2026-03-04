@@ -42,19 +42,19 @@ Limited Offer: 20% OFF This Week!
 
 <h2>Shoe Gallery (Small Images)</h2>
 
-<!-- 5 Small Images in Containers -->
+<!-- 5 Images in Containers -->
 <div class="shoe-box">
-    <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="Adidas Sneakers">
+    <img class="small-shoe" src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519" alt="Adidas Sneakers">
     <p>Adidas Sneakers</p>
 </div>
 
 <div class="shoe-box">
-    <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77" alt="Puma Sports">
+    <img class="small-shoe" src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77" alt="Puma Sports">
     <p>Puma Sports</p>
 </div>
 
 <div class="shoe-box">
-    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Nike Running">
+    <img class="small-shoe" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Nike Running">
     <p>Nike Running</p>
 </div>
 
@@ -70,7 +70,6 @@ Limited Offer: 20% OFF This Week!
 
 <h2>Shoe Showcase (Small Videos)</h2>
 
-<!-- 2 Small Videos in Containers -->
 <div class="video-box">
     <video width="150" height="100" controls>
         <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
@@ -99,25 +98,33 @@ body {
     margin: 0;
 }
 
-/* Small Image container styling */
+/* Image container styling */
 .shoe-box {
     display: inline-block;
-    width: 100px;  /* small container */
+    width: 100px;  
     margin: 10px;
     padding: 8px;
     background-color: #222;
     border-radius: 8px;
 }
 
-/* Tiny images */
-.shoe-box img {
-    width: 40px;   /* tiny image */
-    height: 40px;  /* tiny image */
+/* Make only Adidas, Puma, Nike images smaller */
+.shoe-box img.small-shoe {
+    width: 35px;   /* very small */
+    height: 35px;  /* very small */
     object-fit: cover;
     border-radius: 6px;
 }
 
-/* Small Video container styling */
+/* Other images remain slightly larger */
+.shoe-box img:not(.small-shoe) {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Video container styling */
 .video-box {
     display: inline-block;
     width: 160px;  
