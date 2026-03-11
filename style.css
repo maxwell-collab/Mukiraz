@@ -1,57 +1,60 @@
+
+/* Page background */
 body{
-background-color: lightgreen;
-font-family: Arial;
-text-align: center;
+    background-color: lightgreen;
+    font-family: Arial;
+    text-align: center;
 }
 
-/* ID Styling */
+/* H1 using ID */
 #main-title{
-color: purple;
-font-size: 40px;
+    color: darkblue;
+    font-size: 40px;
 }
 
-/* Class Styling */
+/* H2 using class */
 .section-title{
-color: darkblue;
-font-size: 28px;
+    color: darkred;
+    font-size: 28px;
+}
+
+/* H3 using IDs */
+#building1{
+    color: purple;
+}
+
+#building2{
+    color: orange;
+}
+
+/* H4 using class */
+.small-title{
+    color: green;
+    font-size: 22px;
 }
 
 /* Paragraph styles */
+
 .p1{
-color: blue;
+    color: black;
 }
 
 .p2{
-color: red;
+    color: blue;
 }
 
 .p3{
-color: orange;
+    color: brown;
 }
 
 .p4{
-color: brown;
+    color: darkgreen;
 }
 
 .p5{
-color: green;
+    color: darkorange;
 }
 
 .p6{
-color: black;
-}
-
-/* h3 using IDs */
-#beauty1{
-color: pink;
-}
-
-#beauty2{
-color: teal;
-}
-
-/* h4 */
-.small-title{
-color: darkred;
-font-style: italic;
+    color: purple;
 }
