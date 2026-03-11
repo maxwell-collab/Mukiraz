@@ -1,17 +1,57 @@
-/* External Paragraph */
-.external-paragraph {
-  color: purple;
-  text-decoration: underline;
+body{
+background-color: lightgreen;
+font-family: Arial;
+text-align: center;
 }
 
-/* External Highlight */
-.external-highlight {
-  color: blue;
-  text-decoration: underline;
+/* ID Styling */
+#main-title{
+color: purple;
+font-size: 40px;
 }
 
-/* External h3 */
-.external-beauty {
-  color: brown;
-  text-decoration: underline;
+/* Class Styling */
+.section-title{
+color: darkblue;
+font-size: 28px;
+}
+
+/* Paragraph styles */
+.p1{
+color: blue;
+}
+
+.p2{
+color: red;
+}
+
+.p3{
+color: orange;
+}
+
+.p4{
+color: brown;
+}
+
+.p5{
+color: green;
+}
+
+.p6{
+color: black;
+}
+
+/* h3 using IDs */
+#beauty1{
+color: pink;
+}
+
+#beauty2{
+color: teal;
+}
+
+/* h4 */
+.small-title{
+color: darkred;
+font-style: italic;
 }
